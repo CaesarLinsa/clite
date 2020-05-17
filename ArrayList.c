@@ -84,3 +84,9 @@ void* get_obj(ArrayList* list,int index)
         return NULL;
     return list->data[index];
 }
+
+void destory_array(ArrayList* list)
+{
+    free(list->data);
+    free(list);
+}
